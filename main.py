@@ -12,8 +12,8 @@ space.gravity = (0, 1000)
 
 # Color
 cyan = (180, 220, 220)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
+black = (0, 0, 0)
+red = (255, 0, 0)
 
 # Basic Setting
 ball_radius = 10
@@ -71,11 +71,11 @@ while running:
 
     for obstacle in obstacles:
         position = int(obstacle.body.position.x), int(obstacle.body.position.y)
-        pygame.draw.circle(screen, RED, position, obstacle_radius)
+        pygame.draw.circle(screen, red, position, obstacle_radius)
 
     for ball in balls:
         position = int(ball.body.position.x), int(ball.body.position.y)
-        pygame.draw.circle(screen, BLACK, position, ball_radius)
+        pygame.draw.circle(screen, black, position, ball_radius)
 
     pygame.display.flip()
     pygame.time.delay(30)
